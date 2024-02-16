@@ -1,0 +1,126 @@
+/* Importación de la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente de letra profesional */
+    background-image: url(https://images.pexels.com/photos/3505699/pexels-photo-3505699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    background-color: transparent;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    height: 125px;
+}
+
+.contenedor a {
+    text-decoration: none;
+}
+
+.contenedor h1 {
+    margin-top: -5px; /* Eliminado el margen superior */
+    margin-left: 20px;
+    font-size: 55px;
+    color: #ffffff; /* Blanco */
+}
+
+.contenedor h1:hover {
+    color: #28a56b; /* Verde azulado al pasar el cursor */
+    transition: color 0.9s ease;
+}
+
+.contenedor h2 {
+    font-size: 15px;
+    color: white; /* Blanco */
+    margin-top: -10px; /* Ajuste de posición vertical */
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco translúcido */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 80%;
+    box-shadow: 0px 0px 10px 0px #e9bebe17; /* Sombra suave */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Negro */
+}
+
+.description {
+    color: #555; /* Gris oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 100px;
+    border: 2px solid #a2bbae; /* Verde grisáceo */
+    font-size: 18px; /* Tamaño de fuente aumentado */
+    padding: 12px 20px; /* Aumentar el espacio horizontal dentro del input */
+    width: calc(100% - 30px); /* Ancho igual al 100% menos el ancho del botón cancelar */
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 30px; /* Espacio superior reducido */
+}
+
+.btn {
+    border-radius: 100px;
+    font-size: 16px;
+    padding: 12px 24px; /* Aumentar el espacio dentro del botón */
+    transition: all 0.3s ease; /* Transición suave para todos los estados */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Azul brillante */
+    border-color: #007bff;
+    color: #fff; /* Blanco */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Azul oscuro al pasar el cursor */
+    border-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Rojo */
+    border-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Rojo oscuro al pasar el cursor */
+    border-color: #c82333;
+}
+
+.footer {
+    margin-top: 40px; /* Espacio entre el formulario y el footer */
+}
+
+.footer p {
+    color: #777; /* Gris */
+    font-size: 14px; /* Tamaño de fuente reducido */
+    text-align: center;
+}
+
+.footer p a {
+    color: #333; /* Negro */
+    font-weight: bold; /* Texto en negrita */
+}

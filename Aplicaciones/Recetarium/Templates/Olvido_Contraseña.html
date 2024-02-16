@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olvido de Contraseña</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Olvido_Contraseña.css' %}">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="{% url 'index' %}"><h1 style="font-family: 'Courgette', 'Lobster', cursive; ">RC</h1></a>
+            <h2>Recetarium.com</h2>
+        </div>
+    </header>
+    <div class="container">
+        <b><h1 class="text-center">Recuperar Contraseña</h1></b>
+        <p class="description">Ingrese su dirección de correo electrónico y le enviaremos instrucciones para restablecer su contraseña.</p>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" name="email" required>
+            </div>
+            <div class="form-group btn-container">
+                <button type="submit" class="btn btn-primary">Enviar Correo de Restablecimiento</button>
+                <a href="#" class="btn btn-danger ms-2" onclick="cancelar()">Cancelar</a>
+            </div>
+        </form>
+        <br><br>
+        <footer>
+            <div class="der">
+                <p>&copy; 2023 <b>Recetarium.</b> Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script>
+        function cancelar() {
+            alert('Operación cancelada');
+        }
+    </script>
+</body>
+</html>
