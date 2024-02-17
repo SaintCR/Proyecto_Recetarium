@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/1639563/pexels-photo-1639563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titulo{
+    margin-left: 40%;
+    margin-top: 20px;
+    font-family: 'Courgette', cursive;
+    font-family: 'Lobster', sans-serif;
+    font-size: 61px;
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.row {
+    position: relative;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.8); /* Cambiamos el color de fondo a blanco con una opacidad del 80% */
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 48px;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: -7px;
+    animation: bounceInRight 0.5s ease;
+    font-size: 22px;
+}
+
+@keyframes bounceInRight {
+    from {
+    transform: translateX(100%);
+    opacity: 0;
+    }
+
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="text"] {
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 108%;
+    border-color: #036310;
+}
+
+#formularioInicio {
+    left: 160px;
+}
+
+#formularioRegistro {
+    right: -520px;
+}
+
+.formulario-izquierda {
+    transform: translateX(-100%);
+    opacity: 0;
+    background-color: rgba(255, 204, 204, 0.8); /* Cambiamos el color de fondo a rosa claro con una opacidad del 80% */
+}
+
+.formulario-derecha {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: rgba(204, 255, 204, 0.8); /* Cambiamos el color de fondo a verde claro con una opacidad del 80% */
+}
+
+#volverInicio,  #crearCuenta, #olvidadoContraseña{
+    color: green;
+}
+
+#volverInicio, #crearCuenta, #olvidadoContraseña:hover{
+    color: #036310;
+}
+
+#boton-crear-cuenta, #boton-inicio-sesion{
+    background-color: green;
+    color: white;
+    border-radius: 15%;
+}
+
+#boton-crear-cuenta, #boton-inicio-sesion:hover{
+    color: #036310;
+    color: white;
+}

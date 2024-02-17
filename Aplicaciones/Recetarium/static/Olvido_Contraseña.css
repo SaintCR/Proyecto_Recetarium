@@ -1,9 +1,9 @@
 /* Importación de la fuente de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap');
 
 /* Estilos generales */
 body {
-    font-family: 'Montserrat', sans-serif; /* Fuente de letra profesional */
+    font-family: sans-serif; /* Fuente de letra profesional */
     background-image: url(https://images.pexels.com/photos/3505699/pexels-photo-3505699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,6 +22,9 @@ header {
 
 .contenedor a {
     text-decoration: none;
+    font-family: 'Courgette' cursive;
+    font-family: 'Lobster', sans-serif;
+    
 }
 
 .contenedor h1 {
@@ -29,6 +32,8 @@ header {
     margin-left: 20px;
     font-size: 55px;
     color: #ffffff; /* Blanco */
+    font-family: 'Courgette' cursive;
+    font-family: 'Lobster', sans-serif;
 }
 
 .contenedor h1:hover {
@@ -40,6 +45,8 @@ header {
     font-size: 15px;
     color: white; /* Blanco */
     margin-top: -10px; /* Ajuste de posición vertical */
+    font-family: 'Courgette' cursive;
+    font-family: 'Lobster', sans-serif;
 }
 
 .container {

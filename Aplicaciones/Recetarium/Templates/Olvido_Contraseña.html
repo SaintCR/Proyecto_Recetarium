@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="contenedor">
-            <a href="{% url 'index' %}"><h1 style="font-family: 'Courgette', 'Lobster', cursive; ">RC</h1></a>
+            <a href="{% url 'index' %}"><h1>RC</h1></a>
             <h2>Recetarium.com</h2>
         </div>
     </header>
@@ -26,7 +26,7 @@
             </div>
             <div class="form-group btn-container">
                 <button type="submit" class="btn btn-primary">Enviar Correo de Restablecimiento</button>
-                <a href="#" class="btn btn-danger ms-2" onclick="cancelar()">Cancelar</a>
+                <a href="{% url 'index' %}" class="btn btn-danger ms-2" onclick="cancelar()">Cancelar</a>
             </div>
         </form>
         <br><br>

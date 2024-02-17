@@ -10,3 +10,6 @@ def crear_elegir_receta(request):
 
 def olvido_contraseña(request):
     return render(request, 'Olvido_Contraseña.html')
+
+def inicio_sesion_registro(request):
+    return render(request, 'Inicio_Sesion_Registro.html')
