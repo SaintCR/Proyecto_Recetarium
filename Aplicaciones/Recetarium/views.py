@@ -13,3 +13,9 @@ def olvido_contraseña(request):
 
 def inicio_sesion_registro(request):
     return render(request, 'Inicio_Sesion_Registro.html')
+
+def salud_nutricion(request):
+    return render(request, 'Salud_y_Nutricion.html')
+
+def calculadora_salud(request):
+    return render(request, 'Calculadora_De_Salud.html')
