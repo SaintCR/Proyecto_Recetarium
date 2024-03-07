@@ -81,6 +81,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'proyecto_recetarium.db',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',   # O la dirección de tu servidor MySQL
+        'PORT': '3306',
     }
 }
 
